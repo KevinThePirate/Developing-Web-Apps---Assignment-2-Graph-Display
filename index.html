@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Kevin Smith - R00171883</title>
+  </head>
+  <body id="page">
+    <h1>My Bar Chart Yolk</h1>
+    <div id="text">
+      <label for="text-display">Caption</label>
+      <input type="text" id="text-display" />
+      <select id="position" name="position">
+        <option value="1">Top Left</option>
+        <option value="2">Top Right</option>
+        <option value="3">Bottom Left</option>
+        <option value="4">Bottom Right</option>
+      </select>
+      <button id="save-image" onclick="image()">Save Image</button>
+    </div>
+    <canvas id="canvas" width="800px" height="300px"> </canvas>
+    <br />
+    <div id="control-areas">
+      <div id="control-area-1">
+        <div class="inner">
+          <label for="quantity">Amount of Bars</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="7"
+            value="4"
+          />
+          <br />
+          <p>Sliders:</p>
+          <div id="chart-slider-area"></div>
+        </div>
+      </div>
+      <div id="control-area-2">
+        <div class="inner">
+          <div>
+            <button id="new-colour">New Colours</button>
+            <br />
+            <button id="reset-colour">Reset Colours</button>
+          </div>
+          <div id="sliders">
+            <label for="max-width"> Max Width </label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="100"
+              id="max-width-slider"
+              name="max-width"
+            />
+            <span></span>
+            <br />
+            <label for="indiv-width"> Width Of Bars </label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="100"
+              id="indiv-width-slider"
+              name="indiv-width"
+            />
+            <span></span>
+            <br />
+            <label for="max-height"> Max Height </label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="100"
+              id="height-slider"
+              name="max-height"
+            /><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="image-area">
+      <img style="height: 100%; width: 100%" />
+    </div>
+  </body>
+</html>
